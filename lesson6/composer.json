@@ -1,0 +1,10 @@
+{
+    "name": "sergey_feoktistov/lesson6",
+    "description": "Домашнее задание к лекции 6 курса \"Архитектура, алгоритмы и паттерны на PHP\"",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {}
+}
