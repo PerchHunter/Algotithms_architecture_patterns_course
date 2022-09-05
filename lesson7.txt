@@ -1,0 +1,24 @@
+1)
+Front Controller в данном проекте - это файл Kernel.php
+
+Он взимодействует с:
+Framework\Registry для взаимодействия с файлами конфигурации,
+Symfony\Component\DependencyInjection\Loader\PhpFileLoader для загрузки содержимого файлов конфигураций,
+Symfony\Component\DependencyInjection\ContainerBuilder это контейнер для внедрения зависимостей, 
+Symfony\Component\Config\FileLocator это массив с предопределёнными путями для поиска файлов,
+Symfony\Component\HttpKernel\Controller\ControllerResolver используется для определения контроллера для выполнения,
+Symfony\Component\HttpKernel\Controller\ArgumentResolver для получения аргументов из строки запроса, 
+Symfony\Component\HttpFoundation\Request для работы с HTTP запросом,
+Symfony\Component\HttpFoundation\Response для генерации HTTP ответа,
+Symfony\Component\HttpFoundation\Session\Session класс для работы с сессией,
+Symfony\Component\Routing\Exception\ResourceNotFoundException вызывает ответ 404, если ресурс не был найден,
+Symfony\Component\Routing\Matcher\UrlMatcher ищет нужный url в предоставленном наборе маршрутов,
+Symfony\Component\Routing\RequestContext содержит информацию о текущем запросе,
+Symfony\Component\Routing\RouteCollection формирует коллекцию роутов из файла конфигурации
+
+
+2) Применен Registry применён для получения данных из конфигурационного файла из любой точки
+приложения 
+
+
+
